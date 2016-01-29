@@ -1873,10 +1873,17 @@
     <pattern pos="noun" id="hrad" parent="hrad" >
         <condition-list lemma="yes">
             <condition charno="-1" type="class" value="tvrdá souhláska" />
+            <basechange no="2" operation="append" value="ě"/>
         </condition-list>
-
+            
         <condition-list lemma="yes">
             <condition charno="-1" type="class" value="obojetná souhláska" />
+            <basechange no="2" operation="append" value="e"/>
+        </condition-list>
+        
+        <condition-list lemma="yes">
+            <condition charno="-1" type="class" value="retná souhláska" />
+            <basechange no="2" operation="append" value="ě"/>
         </condition-list>
 
         <negative-condition-list lemma="yes">
@@ -1889,7 +1896,7 @@
         <form base="1"><suffix></suffix><tag>k1gInSc4</tag></form>
         <form base="1"><suffix>e</suffix><tag>k1gInSc5</tag></form>
         <form base="1"><suffix>u</suffix><tag>k1gInSc6</tag></form>
-        <form base="1"><suffix>ě</suffix><tag>k1gInSc6</tag></form>
+        <form base="2"><suffix></suffix><tag>k1gInSc6</tag></form>
         <form base="1"><suffix>e,m</suffix><tag>k1gInSc7</tag></form>
         <form base="1"><suffix>y</suffix><tag>k1gInPc1</tag></form>
         <form base="1"><suffix>ů</suffix><tag>k1gInPc2</tag></form>
@@ -1899,7 +1906,7 @@
         <form base="1"><suffix>e,c,h</suffix><tag>k1gInPc6</tag></form>
         <form base="1"><suffix>y</suffix><tag>k1gInPc7</tag></form>
         <form base="1"><suffix>a,m,a</suffix><tag>k1gMnPc7</tag></form>
-    </pattern>   
+    </pattern>
    
 	<pattern pos="noun" id="les" parent="hrad" >
         <condition-list lemma="yes">
@@ -3171,7 +3178,9 @@
             <condition charno="-2" type="equal" value="l" />
             <condition charno="-3" type="equal" value="á" />
             <condition charno="-4" type="equal" value="k" /> 
-            <condition charno="-5" type="equal" value="s" /> 
+            <condition charno="-5" type="equal" value="s" />
+            <basechange no="3" operation="chop" />
+            <basechange no="3" operation="append" value="e" />
         </condition-list>
 
         <condition-list lemma="yes">
@@ -3179,6 +3188,8 @@
             <condition charno="-2" type="equal" value="n" />
             <condition charno="-3" type="equal" value="á" />
             <condition charno="-4" type="equal" value="r" /> 
+            <basechange no="3" operation="chop" />
+            <basechange no="3" operation="append" value="ě" />
         </condition-list>
 
         <condition-list lemma="yes">
@@ -3186,7 +3197,9 @@
             <condition charno="-2" type="equal" value="v" />
             <condition charno="-3" type="equal" value="á" />
             <condition charno="-4" type="equal" value="r" /> 
-            <condition charno="-5" type="equal" value="k" /> 
+            <condition charno="-5" type="equal" value="k" />
+            <basechange no="3" operation="chop" />
+            <basechange no="3" operation="append" value="ě" /> 
         </condition-list>
 
         <condition-list lemma="yes">
@@ -3194,7 +3207,9 @@
             <condition charno="-2" type="equal" value="v" />
             <condition charno="-3" type="equal" value="á" />
             <condition charno="-4" type="equal" value="r" /> 
-            <condition charno="-5" type="equal" value="t" /> 
+            <condition charno="-5" type="equal" value="t" />
+            <basechange no="3" operation="chop" />
+            <basechange no="3" operation="append" value="ě" /> 
         </condition-list>
 
         <condition-list lemma="yes">
@@ -3202,12 +3217,16 @@
             <condition charno="-2" type="equal" value="m" />
             <condition charno="-3" type="equal" value="á" />
             <condition charno="-4" type="equal" value="j" /> 
+            <basechange no="3" operation="chop" />
+            <basechange no="3" operation="append" value="ě" />
         </condition-list>
 
         <condition-list lemma="yes">
             <condition charno="-1" type="equal" value="a" />
             <condition charno="-2" type="equal" value="b" />
             <condition charno="-3" type="equal" value="á" />
+            <basechange no="3" operation="chop" />
+            <basechange no="3" operation="append" value="ě" />
         </condition-list>
 
 		<basechange no="1" operation="chop" /> 
@@ -3217,10 +3236,10 @@
         
         <form base="1" lemma="yes"><suffix>a</suffix><tag>k1gFnSc1</tag></form>
         <form base="1"><suffix>y</suffix><tag>k1gFnSc2</tag></form>
-        <form base="1"><suffix>e</suffix><tag>k1gFnSc3</tag></form>        
+        <form base="3"><suffix></suffix><tag>k1gFnSc3</tag></form>        
         <form base="1"><suffix>u</suffix><tag>k1gFnSc4</tag></form>
         <form base="1"><suffix>o</suffix><tag>k1gFnSc5</tag></form>
-        <form base="1"><suffix>e</suffix><tag>k1gFnSc6</tag></form>        
+        <form base="3"><suffix></suffix><tag>k1gFnSc6</tag></form>        
         <form base="1"><suffix>o,u</suffix><tag>k1gFnSc7</tag></form>
         <form base="2"><suffix>o,u</suffix><tag>k1gFnSc7</tag></form>
         <form base="1"><suffix>y</suffix><tag>k1gFnPc1</tag></form>
@@ -3501,7 +3520,9 @@
             <condition charno="-3" type="class" value="souhláska" />
             <basechange no="1" operation="chop" /> 
 			<basechange no="2" operation="chop" />
-			<basechange no="2" operation="append" value="e" charno="-2"/> 
+			<basechange no="2" operation="append" value="e" charno="-2"/>
+			<basechange no="3" operation="chop" />
+			<basechange no="3" operation="append" value="ě" />
         </condition-list>
         
         <condition-list lemma="yes">
@@ -3510,7 +3531,9 @@
             <condition charno="-3" type="class" value="souhláska" />
             <basechange no="1" operation="chop" /> 
 			<basechange no="2" operation="chop" />
-			<basechange no="2" operation="append" value="e" charno="-2"/> 
+			<basechange no="2" operation="append" value="e" charno="-2"/>
+			<basechange no="3" operation="chop" />
+			<basechange no="3" operation="append" value="ě" />
         </condition-list>
 
         <condition-list lemma="yes">
@@ -3519,15 +3542,17 @@
             <condition charno="-3" type="class" value="souhláska" />
             <basechange no="1" operation="chop" /> 
 			<basechange no="2" operation="chop" />
-			<basechange no="2" operation="append" value="e" charno="-2"/> 
+			<basechange no="2" operation="append" value="e" charno="-2"/>
+			<basechange no="3" operation="chop" />
+			<basechange no="3" operation="append" value="e" /> 
         </condition-list>
         
         <form base="1" lemma="yes"><suffix>a</suffix><tag>k1gFnSc1</tag></form>
         <form base="1"><suffix>y</suffix><tag>k1gFnSc2</tag></form>
-        <form base="1"><suffix>ě</suffix><tag>k1gFnSc3</tag></form>        
+        <form base="3"><suffix></suffix><tag>k1gFnSc3</tag></form>        
         <form base="1"><suffix>u</suffix><tag>k1gFnSc4</tag></form>
         <form base="1"><suffix>o</suffix><tag>k1gFnSc5</tag></form>
-        <form base="1"><suffix>ě</suffix><tag>k1gFnSc6</tag></form>        
+        <form base="3"><suffix></suffix><tag>k1gFnSc6</tag></form>        
         <form base="1"><suffix>o,u</suffix><tag>k1gFnSc7</tag></form>
         <form base="1"><suffix>y</suffix><tag>k1gFnPc1</tag></form>
         <form base="2"><suffix></suffix><tag>k1gFnPc2</tag></form>
